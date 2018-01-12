@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+	</head>
+
+	<body>
+		<div>
+			<input type="input" class="ui-btn ui-corner-all" id="testbtn" value="button"/>
+		</div>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        	$("#testbtn").on('mousedown',function(){
+            	console.log('button pressed....');
+	        });
+	        $("#testbtn").mouseup(function(){
+	            console.log('button released....');
+	        });
+		});
+    </script>
+	</body>
+</html>
